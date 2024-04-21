@@ -7,16 +7,19 @@ type FSHubStateMachine = typeof fsHubStateMachine;
 
 const fsHub = await MicroRollup({
   config: stackrConfig,
-  actionSchemas: [
-    actionSchemas.createMatchSchema,
-    actionSchemas.addPlayerToTeamInMatchSchema,
-  ],
+  actionSchemas: [...Object.values(actionSchemas)],
   isSandbox: process.env.IS_SANDBOX === 'true',
   stateMachines: [fsHubStateMachine],
   stfSchemaMap: {
     createMatch: actionSchemas.createMatchSchema.identifier,
     addPlayerToTeamInMatch:
       actionSchemas.addPlayerToTeamInMatchSchema.identifier,
+    addPlayerSelectionForMatch:
+      actionSchemas.addPlayerSelectionForMatchSchema.identifier,
+    calculatePlayerPointsForMatch:
+      actionSchemas.calculatePlayerPointsForMatchSchema.identifier,
+    calculateAllUserScoreForMatch:
+      actionSchemas.calculateAllUserScoreForMatchSchema.identifier,
   },
 });
 

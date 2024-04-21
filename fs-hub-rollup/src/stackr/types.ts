@@ -73,6 +73,40 @@ type AddPlayerToTeamInMatchInput = {
   playerName: string;
 };
 
+/**
+ * A struct representing the input type of `AddPlayerSelectionForMatch` STF.
+ */
+type AddPlayerSelectionForMatchInput = {
+  matchName: string;
+  playerName: string;
+};
+
+/**
+ * A struct representing the input type of `CalculatePlayerPointsForMatch` STF.
+ */
+type CalculatePlayerPointsForMatchInput = {
+  matchName: string;
+  playerName: string;
+  battingRuns: number;
+  boundaries: number;
+  sixer: number;
+  wickets: number;
+  bowledWickets: number;
+  maidenOvers: number;
+  catches: number;
+  stumpings: number;
+  runOutDirectHits: number;
+  runOutAssists: number;
+  captain: boolean;
+  viceCaptain: boolean;
+  announcedLineup: boolean;
+  playingSubstitute: boolean;
+};
+
+type CalculateUserScoresForMatchInput = {
+  matchName: string;
+};
+
 export type {
   FSHubState,
   MatchEvent,
@@ -81,4 +115,7 @@ export type {
   Team,
   CreateMatchInput,
   AddPlayerToTeamInMatchInput,
+  AddPlayerSelectionForMatchInput,
+  CalculatePlayerPointsForMatchInput,
+  CalculateUserScoresForMatchInput,
 };
