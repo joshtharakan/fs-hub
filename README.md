@@ -22,6 +22,11 @@ The use of MRUs helps to track real-time updates of the performance/ranking of s
 ### C4 Context Diagram
 ![context diagram](<./docs/C4 Context Diagram.png>)
 
+
+
+## EthGlobal Scaling Ethereum 2024
+Please find the showcase [here](https://ethglobal.com/showcase/fs-hub-y0op6)
+
 ### References
 
 | References | Notes |
