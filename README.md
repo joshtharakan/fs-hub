@@ -16,6 +16,8 @@ Using AvailDA provides sufficiently enough blobspace that is cheap and does not 
 
 The use of MRUs helps to track real-time updates of the performance/ranking of sport players without the overhead of traditional blockchain transactions. It also allows for modular development and scalability. By isolating application states of each match as separate ephemeral rollup, we can efficiently manage data, prevent unsustainable state growth and ensure long-term scalability.
 
+to test
+
 
 ## Architecture
 
